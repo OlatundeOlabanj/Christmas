@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scrolly/cssanimation.css"> 
+    <script type="text/javascript" src="scrolly/scrolly.js"></script>
+    <script src="script.js"></script>
+    <title>TJs Christmas</title>
+</head>
+<body>
+    <video autoplay loop muted playsinline id="background-video">
+        <source src="bgvideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <span>TJs Christmas</span>
+        <span>Merry Christmas</span>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#countD">CountDown</a></li>
+                <li><a href="#cardS">Card_Generator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- intro section -->
+      
+        <section id="intro" class="intro">
+
+<article>
+    <center> 
+        <div class="cssanimation hu__hu__">TJs CodeC Wishes You a Merry Christmas</div>
+        </center>
+    <p>
+        The holiday season is a time for joy, giving, and spending time with loved ones. It's also a great time to learn something new and challenge yourself. If you're looking for a fun and educational way to celebrate the holidays, why not try coding?
+
+    </p>
+    <br>
+    <p>
+        TJ's CodeC has everything you need to get started with coding this Christmas. We have interactive Christmas cards, festive games, and coding challenges for all levels. You can even learn how to code your own Christmas-themed games and apps!
+
+        Visit our website today to learn more about our Christmas coding activities.
+    </p>
+</article>
+<img src="santa.png" alt="" class="scroll">
+        </section>
+
+
+        
+        <!-- count down section -->
+         <center> 
+       
+        <section id="countD" class="count">
+            <h1>Holiday Countdown</h1>
+  <div id="countdowns">
+    
+    <div id="countdown">
+        <h2>New Year Countdown</h2>
+      <div class="time-box">
+        <span id="new-year-days">00</span>
+        <label>Days</label>
+      </div>
+      <div class="time-box">
+        <span id="new-year-hours">00</span>
+        <label>Hours</label>
+      </div>
+      <div class="time-box">
+        <span id="new-year-minutes">00</span>
+        <label>Minutes</label>
+      </div>
+      <div class="time-box">
+        <span id="new-year-seconds">00</span>
+        <label>Seconds</label>
+      </div>
+    </div>
+    
+    <div id="christmas-countdown">
+        <h2>Christmas Countdown</h2>
+      <div class="time-box">
+        <span id="christmas-days">00</span>
+        <label>Days</label>
+      </div>
+      <div class="time-box">
+        <span id="christmas-hours">00</span>
+        <label>Hours</label>
+      </div>
+      <div class="time-box">
+        <span id="christmas-minutes">00</span>
+        <label>Minutes</label>
+      </div>
+      <div class="time-box">
+        <span id="christmas-seconds">00</span>
+        <label>Seconds</label>
+      </div>
+    </div>
+  </div>
+          
+        </section>
+    </center>
+        <!-- card generator section -->
+        <center>
+        <section id="cardS">
+            
+            <form id="cardForm">
+                <h1>Christmas Card Generator</h1>
+              <input type="text" id="name" placeholder="Recipient's First Name" required>
+              <br>
+              <select id="gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+              <br>
+              <button type="button" onclick="generateCard()">Generate Card</button>
+            </form>
+          
+            <div id="card" style="display:none;">
+              <h2>Dear <span id="recipientName"></span>,</h2>
+              <p id="message"></p>
+              <p>🎄 Merry Christmas! 🎄</p>
+            </div>
+          
+            <button id="downloadBtn" style="display:none;" onclick="downloadCard()">Download Card</button>
+        </section>
+         </center>
+    </main>
+    <center> 
+    <footer>
+        Created with ❤️ for the holiday season! <a href="#">Celebrate Now</a>
+      </footer>
+    </center>
+</body>
+</html>
